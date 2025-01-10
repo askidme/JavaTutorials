@@ -1,0 +1,177 @@
+Topic 1: Introducing Threads:
+
+#### **Right-Wrong Statements**
+
+1. **Statement 1:** A thread in Java can only be created by extending the `Thread` class.
+   
+2. **Statement 2:** The `Runnable` interface is used to define the task a thread will execute.
+
+3. **Statement 3:** Calling the `start()` method on a thread executes the `run()` method of the thread in the current thread context.
+
+4. **Statement 4:** A thread created using the `Runnable` interface must be passed to a `Thread` object before it can start.
+
+5. **Statement 5:** Threads in Java cannot be put to sleep for a specific amount of time.
+
+6. **Statement 6:** The `Thread.sleep()` method pauses the thread for a specific duration and does not release any locks held by the thread.
+
+7. **Statement 7:** Threads created using the `Runnable` interface can return a result.
+
+8. **Statement 8:** The `Thread` class provides methods to set a thread's priority.
+
+9. **Statement 9:** A thread in Java can be interrupted while it is sleeping.
+
+10. **Statement 10:** The `main` method in a Java program runs in the main thread created by the JVM.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 2: Creating Threads with the ExecutorService
+
+1. **Statement 1:** A `SingleThreadExecutor` ensures that tasks are executed sequentially in the same order they are submitted.
+
+2. **Statement 2:** An `ExecutorService` can be shut down using the `shutdown()` or `shutdownNow()` methods.
+
+3. **Statement 3:** Submitting a task to an `ExecutorService` using the `submit()` method returns a `Future` object.
+
+4. **Statement 4:** Once an `ExecutorService` is shut down, it can be restarted by calling `start()`.
+
+5. **Statement 5:** The `awaitTermination()` method blocks until all tasks have completed execution after a shutdown request, or the timeout occurs.
+
+6. **Statement 6:** A `ScheduledExecutorService` can schedule tasks to run periodically or after a fixed delay.
+
+7. **Statement 7:** Increasing the thread pool size in a `FixedThreadPool` dynamically allocates new threads as needed.
+
+8. **Statement 8:** The `newCachedThreadPool()` method creates a thread pool that can reuse previously constructed threads when available.
+
+9. **Statement 9:** Using `Callable` with an `ExecutorService` allows tasks to return results or throw checked exceptions.
+
+10. **Statement 10:** If an uncaught exception occurs in a thread managed by an `ExecutorService`, the thread is terminated, but the executor continues accepting new tasks.
+
+---
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 3: Syncronizing Data Access
+
+1. **Statement 1:** The `AtomicInteger` class allows atomic operations on integers without using synchronization.
+
+2. **Statement 2:** A synchronized block in Java ensures that only one thread can execute the block at a time for the same object.
+
+3. **Statement 3:** Synchronizing a method locks the entire class, preventing all threads from accessing any synchronized methods in that class.
+
+4. **Statement 4:** The `synchronized` keyword can be used to synchronize static methods, locking the class’s `Class` object.
+
+5. **Statement 5:** Atomic classes like `AtomicInteger` and `AtomicLong` are slower than synchronized blocks because they internally use locks.
+
+6. **Statement 6:** Synchronization incurs a performance cost because it involves thread contention and context switching.
+
+7. **Statement 7:** Multiple threads can enter different synchronized blocks of the same object simultaneously.
+
+8. **Statement 8:** The `volatile` keyword ensures that a variable is thread-safe and can be used as a replacement for synchronization.
+
+9. **Statement 9:** Using synchronized methods guarantees thread safety by enforcing a memory visibility guarantee.
+
+10. **Statement 10:** Synchronization is unnecessary when using collections from the `java.util.concurrent` package.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 4: Using concurrent collections
+
+
+1. **Statement 1:** The `ConcurrentHashMap` allows multiple threads to read and write simultaneously without requiring explicit synchronization.
+
+2. **Statement 2:** The `CopyOnWriteArrayList` creates a new copy of the underlying array every time an element is added or removed.
+
+3. **Statement 3:** Memory consistency errors can occur when one thread modifies a shared collection and another thread reads it simultaneously without synchronization.
+
+4. **Statement 4:** The `java.util.Collections.synchronizedList()` method wraps a regular `ArrayList` to make it thread-safe.
+
+5. **Statement 5:** Concurrent collections like `ConcurrentLinkedQueue` provide atomic operations and eliminate the need for explicit locking.
+
+6. **Statement 6:** Using `HashMap` in a multithreaded environment is safe as long as the threads only read from it.
+
+7. **Statement 7:** The `BlockingQueue` interface provides thread-safe operations for adding and removing elements, and methods like `put()` and `take()` block when the queue is full or empty.
+
+8. **Statement 8:** The `ConcurrentSkipListSet` is thread-safe and maintains its elements in sorted order.
+
+9. **Statement 9:** The `CopyOnWriteArrayList` is best suited for scenarios where reads are more frequent than writes.
+
+10. **Statement 10:** Synchronizing a collection using `Collections.synchronizedMap()` guarantees safe iteration without further precautions.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 5: Working with parallel streams
+
+1. **Statement 1:** Parallel streams divide tasks into multiple sub-tasks and execute them in parallel on available processor cores.
+
+2. **Statement 2:** A stream becomes a parallel stream by calling the `parallelStream()` method on a collection.
+
+3. **Statement 3:** Parallel streams guarantee the order of execution for elements in the stream.
+
+4. **Statement 4:** Using parallel streams can improve performance, but only for CPU-intensive operations.
+
+5. **Statement 5:** The `reduce()` method in parallel streams requires an associative combiner function to work correctly.
+
+6. **Statement 6:** Parallel streams automatically handle thread safety for shared mutable state.
+
+7. **Statement 7:** The `forEachOrdered()` method in parallel streams ensures that elements are processed in the encounter order.
+
+8. **Statement 8:** Parallel streams use a common `ForkJoinPool` with a limited number of threads by default.
+
+9. **Statement 9:** Using parallel streams always results in better performance compared to sequential streams.
+
+10. **Statement 10:** Splitting a stream into multiple sub-tasks can sometimes result in higher overhead, negating performance benefits.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 6: Managing Concurrent Processes
+
+1. **Statement 1:** The `CyclicBarrier` allows a group of threads to wait for each other to reach a common barrier point.
+
+2. **Statement 2:** The `CyclicBarrier` can only be used once and cannot be reset.
+
+3. **Statement 3:** A `CyclicBarrier` can execute a predefined action once all threads have reached the barrier.
+
+4. **Statement 4:** The `Fork/Join` framework is used to split tasks into smaller subtasks that can be executed concurrently.
+
+5. **Statement 5:** The `ForkJoinPool` automatically adjusts the number of threads based on the available system resources.
+
+6. **Statement 6:** A `CyclicBarrier` ensures thread safety by allowing only one thread at a time to access the critical section.
+
+7. **Statement 7:** The `ForkJoinTask` class provides two methods, `fork()` and `join()`, to manage subtasks.
+
+8. **Statement 8:** Tasks submitted to a `ForkJoinPool` are executed sequentially unless explicitly stated otherwise.
+
+9. **Statement 9:** A `CyclicBarrier` can throw a `BrokenBarrierException` if one of the threads is interrupted while waiting.
+
+10. **Statement 10:** The `Fork/Join` framework is designed for recursive divide-and-conquer algorithms, making it efficient for parallelizable tasks.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 7: Identifying Threading Problems
+
+
+1. **Statement 1:** Deadlock occurs when two or more threads are waiting indefinitely for each other to release locks.
+
+2. **Statement 2:** Livelock happens when threads are waiting for each other, but at least one thread is still making progress.
+
+3. **Statement 3:** Starvation occurs when low-priority threads are unable to gain access to resources due to high-priority threads continuously using them.
+
+4. **Statement 4:** Race conditions occur when the outcome of a program depends on the non-deterministic scheduling of threads.
+
+5. **Statement 5:** Synchronizing a block of code ensures that multiple threads can execute it simultaneously without issues.
+
+6. **Statement 6:** Deadlocks can be avoided by acquiring locks in a consistent global order.
+
+7. **Statement 7:** A volatile variable can completely prevent race conditions in multi-threaded applications.
+
+8. **Statement 8:** A livelock can be resolved by introducing random delays or backoff strategies.
+
+9. **Statement 9:** Starvation is a form of thread liveness problem.
+
+10. **Statement 10:** Race conditions only occur when multiple threads write to a shared variable.
+
