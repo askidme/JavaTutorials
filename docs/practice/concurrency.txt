@@ -1,0 +1,489 @@
+Topic 1: Introducing Threads
+
+#### **Practice 1: Creating a Thread by Extending the `Thread` Class**
+**Requirement:**
+- Create a class that extends `Thread`.
+- Override the `run()` method to print numbers from 1 to 10.
+- Each number should be printed with a 500ms delay.
+
+#### **Practice 2: Implementing the `Runnable` Interface**
+**Requirement:**
+- Create a class that implements the `Runnable` interface.
+- Override the `run()` method to calculate and print the squares of numbers from 1 to 5.
+- Create and start a thread to execute the task.
+
+#### **Practice 3: Distinguishing Between User and Daemon Threads**
+**Requirement:**
+- Create two threads: one user thread and one daemon thread.
+- The user thread should print a message once and terminate.
+- The daemon thread should continuously print a message.
+- Observe the behavior when the main thread ends.
+
+#### **Practice 4: Using `sleep()` for Polling**
+**Requirement:**
+- Create a thread that simulates polling a task status.
+- The thread should check the status every second for a total of 5 seconds.
+- Print "Checking status..." at each interval.
+
+#### **Practice 5: Concurrent Execution of Multiple Threads**
+**Requirement:**
+- Create three threads, each printing its name using `Thread.currentThread().getName()`.
+- Start the threads and observe the interleaving output to demonstrate concurrent execution.
+
+#### **Practice 6: Synchronizing Threads**
+**Requirement:**
+- Create a shared counter variable.
+- Create two threads that increment the counter 1000 times each.
+- Ensure thread safety using synchronization.
+- Print the final value of the counter.
+
+#### **Practice 7: Handling Interruptions**
+**Requirement:**
+- Create a thread that runs an infinite loop, printing "Running..." every 500ms.
+- Interrupt the thread after 2 seconds and handle the interruption gracefully by exiting the loop.
+
+#### **Practice 8: Thread Priority Demonstration**
+**Requirement:**
+- Create three threads.
+- Assign them `MIN_PRIORITY`, `NORM_PRIORITY`, and `MAX_PRIORITY` respectively.
+- Observe the order of execution to understand how priorities influence thread scheduling.
+
+#### **Practice 9: Joining Threads**
+**Requirement:**
+- Create two threads that each print a message after a delay (1 second and 1.5 seconds).
+- Use `join()` to ensure the main thread waits for their completion.
+- Print a message from the main thread after both threads finish.
+
+#### **Practice 10: Timer Simulation**
+**Requirement:**
+- Create a thread that acts as a timer.
+- The thread should print the elapsed time every second for a total of 10 seconds.
+- Ensure the timer runs independently without blocking the main thread.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 2: Creating Threads with the ExecutorService
+
+#### **Practice 1: Sequential Task Execution with Single-Thread Executor**
+
+**Requirement:**
+
+Create a single-thread executor to execute three tasks sequentially.
+
+Each task should print a message indicating its start and end.
+
+Introduce a 1-second pause between the start and end of each task.
+
+Verify that the tasks execute one after another without overlapping.
+
+#### **Practice 2: Shutting Down an Executor**
+
+**Requirement:**
+
+Create a fixed-thread pool with three threads.
+
+Submit five tasks, each printing the current thread name and a unique message.
+
+After submitting tasks, shut down the executor gracefully.
+
+Use awaitTermination to ensure all tasks complete before program termination.
+
+Print a final message after shutting down the executor.
+
+#### **Practice 3: Submitting Callable Tasks**
+
+**Requirement:**
+
+Submit a Callable task to calculate the factorial of a given number.
+
+Use Future to retrieve the result and handle exceptions.
+
+Print the input number, the factorial result, and any exceptions that occur.
+
+Ensure the executor service shuts down after task completion.
+
+#### **Practice 4: Handling Future Results**
+
+**Requirement:**
+
+Submit five Callable tasks to calculate the squares of numbers from 1 to 5.
+
+Use Future to retrieve and print the results.
+
+Include exception handling for potential errors in task execution.
+
+Print a summary of all square calculations after retrieving results.
+
+#### **Practice 5: Scheduling a Delayed Task**
+
+**Requirement:**
+
+Use ScheduledExecutorService to execute a task with a 2-second delay.
+
+The task should print the current time and a custom message.
+
+After the task executes, shut down the scheduler.
+
+#### **Practice 6: Scheduling Repeated Tasks**
+
+**Requirement:**
+
+Schedule a task to print a heartbeat message every 3 seconds.
+
+Ensure the task stops after 5 iterations.
+
+Use ScheduledExecutorService for scheduling and properly shut it down after the iterations.
+
+#### **Practice 7: Using FixedThreadPool for Concurrent Tasks**
+
+**Requirement:**
+
+Create a fixed-thread pool with three threads.
+
+Submit ten tasks, each printing the current thread name and a unique task identifier (e.g., "Task 1", "Task 2").
+
+Observe the interleaved execution of tasks by the three threads.
+
+#### **Practice 8: Using CachedThreadPool for Dynamic Task Execution**
+
+**Requirement:**
+
+Create a cached thread pool to handle dynamic task submission.
+
+Simulate 10 tasks representing network requests, each with a random processing time (500ms to 1500ms).
+
+Print the task start and end time along with the thread name.
+
+#### **Practice 9: Cancelling Tasks**
+
+**Requirement:**
+
+Submit a long-running task that simulates heavy computation (e.g., summing numbers up to 1 billion).
+
+Cancel the task after 2 seconds.
+
+Handle the cancellation gracefully by checking isCancelled and terminating the task.
+
+#### **Practice 10: Implementing Producer-Consumer with ExecutorService**
+
+**Requirement:**
+
+Implement a producer-consumer problem using an ExecutorService and a blocking queue.
+
+The producer should add items to the queue every 500ms.
+
+The consumer should retrieve and print items from the queue every 1 second.
+
+Use proper synchronization and shutdown handling.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Topic 3: Syncronizing Data Access
+
+
+#### **Practice 1: AtomicInteger for a Counter**
+**Requirement:**
+- Create a counter using `AtomicInteger`.
+- Increment the counter from two threads, each incrementing it 1000 times.
+- Print the final value of the counter.
+
+#### **Practice 2: AtomicBoolean for a Toggle**
+**Requirement:**
+- Use `AtomicBoolean` to simulate a toggle switch.
+- Create a thread that flips the switch every second.
+- Create another thread that reads the switch’s state and prints it.
+
+#### **Practice 3: Synchronizing a Bank Account**
+**Requirement:**
+- Create a `BankAccount` class with synchronized methods for deposit and withdrawal.
+- Create two threads performing concurrent deposits and withdrawals.
+- Ensure the balance remains consistent.
+
+#### **Practice 4: Protecting a Shared List with Synchronized Block**
+**Requirement:**
+- Create a shared list and use synchronized blocks to ensure thread-safe access.
+- Create three threads, each adding 100 elements to the list.
+- Print the final size of the list.
+
+#### **Practice 5: Reentrant Synchronization**
+**Requirement:**
+- Create a class with a method that calls another synchronized method.
+- Create two threads that call the first method concurrently.
+- Ensure no deadlock occurs.
+
+#### **Practice 6: Monitoring Synchronization Cost**
+**Requirement:**
+- Measure the time taken to increment a counter using synchronized blocks vs. `AtomicInteger`.
+- Print the execution time for both approaches.
+
+#### **Practice 7: Synchronizing Static Methods**
+**Requirement:**
+- Create a class with a static synchronized method to increment a shared counter.
+- Create three threads that call the method concurrently.
+- Print the final value of the counter.
+
+#### **Practice 8: Double-Checked Locking**
+**Requirement:**
+- Implement a singleton class using double-checked locking.
+- Create multiple threads trying to access the singleton instance.
+- Verify that only one instance is created.
+
+#### **Practice 9: Synchronizing File Access**
+**Requirement:**
+- Simulate file access where multiple threads write to a file concurrently.
+- Use a synchronized block to ensure thread-safe writes.
+- Write the output to a file and verify correctness.
+
+#### **Practice 10: Producer-Consumer with Synchronized Methods**
+**Requirement:**
+- Implement the producer-consumer problem using synchronized methods.
+- Use a shared queue with threads adding and removing items.
+- Ensure proper synchronization to avoid race conditions.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Topic 4: Using concurrent collections
+
+
+### **Practice**
+
+#### **Practice 1: Using `ConcurrentHashMap` for Thread-Safe Map Operations**
+**Requirement:**
+- Create a `ConcurrentHashMap` to store key-value pairs.
+- Use multiple threads to add and read entries concurrently.
+- Print all key-value pairs at the end.
+
+#### **Practice 2: Iterating Safely with `CopyOnWriteArrayList`**
+**Requirement:**
+- Create a `CopyOnWriteArrayList`.
+- Use one thread to iterate over the list while another modifies it.
+- Ensure no `ConcurrentModificationException` is thrown.
+
+#### **Practice 3: Thread-Safe Queue with `ConcurrentLinkedQueue`**
+**Requirement:**
+- Create a `ConcurrentLinkedQueue`.
+- Simulate producer-consumer behavior where one thread adds items and another removes them.
+- Print the queue contents at various stages.
+
+#### **Practice 4: Avoiding Memory Consistency Errors with `CopyOnWriteArraySet`**
+**Requirement:**
+- Use a `CopyOnWriteArraySet` for unique elements.
+- Use multiple threads to add items concurrently.
+- Verify that no duplicates are present.
+
+#### **Practice 5: Wrapping Collections with `Collections.synchronizedList`**
+**Requirement:**
+- Create a standard `ArrayList` and wrap it using `Collections.synchronizedList`.
+- Perform concurrent modifications with multiple threads.
+- Ensure thread-safe operations.
+
+#### **Practice 6: Computing with `ConcurrentHashMap`**
+**Requirement:**
+- Use `ConcurrentHashMap` to compute values dynamically.
+- Use multiple threads to increment the count of keys.
+- Print the updated map at the end.
+
+#### **Practice 7: Bulk Operations with `ConcurrentSkipListMap`**
+**Requirement:**
+- Create a `ConcurrentSkipListMap` for sorted map entries.
+- Add entries from multiple threads.
+- Perform a bulk operation like retrieving a sub-map within a range.
+
+#### **Practice 8: Delayed Queue Simulation with `DelayQueue`**
+**Requirement:**
+- Use a `DelayQueue` to simulate delayed tasks.
+- Create a producer thread to add delayed tasks and a consumer thread to process them.
+- Print the processed tasks with their delay times.
+
+#### **Practice 9: Blocking Queue with `ArrayBlockingQueue`**
+**Requirement:**
+- Use an `ArrayBlockingQueue` to implement a producer-consumer model.
+- Ensure the producer waits when the queue is full and the consumer waits when the queue is empty.
+
+#### **Practice 10: Thread-Safe Navigation with `ConcurrentNavigableMap`**
+**Requirement:**
+- Use `ConcurrentNavigableMap` to store sorted key-value pairs.
+- Use threads to perform navigational operations like `headMap` and `tailMap` concurrently.
+- Verify correctness of sub-map operations.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 5: Working with parallel streams
+
+
+#### **Practice 1: Creating a Parallel Stream from a List**
+**Requirement:**
+- Create a parallel stream from a list of integers.
+- Print each element along with the current thread name.
+
+#### **Practice 2: Filtering Data in Parallel**
+**Requirement:**
+- Use a parallel stream to filter out even numbers from a list.
+- Collect the results into a new list and print the final result.
+
+#### **Practice 3: Summing Elements with Parallel Streams**
+**Requirement:**
+- Use a parallel stream to calculate the sum of integers in an array.
+- Print the sum.
+
+#### **Practice 4: Sorting with Parallel Streams**
+**Requirement:**
+- Use a parallel stream to sort a list of random numbers.
+- Print the sorted list.
+
+#### **Practice 5: Performing Parallel Map-Reduce**
+**Requirement:**
+- Use a parallel stream to perform a map operation (square each number) followed by a reduction (sum).
+- Print the final result.
+
+#### **Practice 6: Generating a Parallel Stream of Random Numbers**
+**Requirement:**
+- Generate a stream of 1,000 random numbers using `Stream.generate` and process it in parallel.
+- Find the maximum number in the stream.
+
+#### **Practice 7: Processing a Large Collection in Parallel**
+**Requirement:**
+- Create a large list of integers (1 to 1,000,000).
+- Use a parallel stream to count the numbers divisible by 3.
+- Print the count.
+
+#### **Practice 8: Parallel Grouping with Collectors**
+**Requirement:**
+- Use a parallel stream to group a list of words by their length.
+- Print the grouped result.
+
+#### **Practice 9: Reducing a Parallel Stream with Associative Operations**
+**Requirement:**
+- Use a parallel stream to calculate the product of integers in a list.
+- Ensure the operation is associative and stateless.
+
+#### **Practice 10: Measuring Performance with Parallel Streams**
+**Requirement:**
+- Compare the performance of sequential and parallel streams when summing integers in a large list.
+- Print the time taken for each.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 6: Managing Concurrent Processes
+
+### **Practice**
+
+#### **Practice 1: Simple CyclicBarrier Example**
+**Requirement:**
+- Create a `CyclicBarrier` for 3 threads.
+- Each thread should perform some computation and wait at the barrier.
+- After all threads reach the barrier, they should proceed to the next step.
+
+#### **Practice 2: Resetting a CyclicBarrier**
+**Requirement:**
+- Create a `CyclicBarrier` for 4 threads.
+- Demonstrate resetting the barrier after all threads reach it.
+- Show that threads can continue with a new synchronization point.
+
+#### **Practice 3: CyclicBarrier with Action**
+**Requirement:**
+- Create a `CyclicBarrier` with a barrier action.
+- The action should print a message when all threads reach the barrier.
+
+#### **Practice 4: Recursive Task with Fork/Join Framework**
+**Requirement:**
+- Use the `Fork/Join` framework to compute the sum of integers from 1 to 100.
+- Divide the range into smaller parts and compute the sum in parallel.
+
+#### **Practice 5: Parallel Merge Sort Using Fork/Join Framework**
+**Requirement:**
+- Implement merge sort using the `Fork/Join` framework.
+- Split the array into smaller parts for sorting.
+- Merge the sorted parts in parallel.
+
+#### **Practice 6: Matrix Multiplication Using Fork/Join**
+**Requirement:**
+- Perform matrix multiplication using the `Fork/Join` framework.
+- Split the computation by rows.
+
+#### **Practice 7: CyclicBarrier for Collaborative Tasks**
+**Requirement:**
+- Simulate a scenario where 5 threads perform tasks in phases.
+- Use `CyclicBarrier` to synchronize the threads at the end of each phase.
+
+#### **Practice 8: Fork/Join Framework for Recursive Factorial**
+**Requirement:**
+- Use the `Fork/Join` framework to calculate the factorial of a large number.
+- Split the computation into smaller tasks for parallel processing.
+
+#### **Practice 9: CyclicBarrier with Timeouts**
+**Requirement:**
+- Use a `CyclicBarrier` for 3 threads with a timeout.
+- Demonstrate what happens when one thread takes longer than the timeout to reach the barrier.
+
+#### **Practice 10: Fork/Join Framework for File Processing**
+**Requirement:**
+- Use the `Fork/Join` framework to process files in a directory.
+- Count the total number of lines across all files in parallel.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 7: Identifying Threading Problems
+
+### Identifying Threading Problems
+
+Threading problems are common in concurrent programming and can lead to issues like incorrect results, performance degradation, or even deadlocks. Understanding these problems and how to mitigate them is crucial for building reliable concurrent applications.
+
+---
+
+### **Subtopics**
+
+1. **Understanding Liveness**
+   - Learn about deadlocks, livelocks, and starvation.
+
+2. **Managing Race Conditions**
+   - Explore techniques to handle race conditions using synchronization, locks, and atomic operations.
+
+---
+
+### **Practice**
+
+#### **Practice 1: Deadlock Scenario**
+**Requirement:**
+- Create a scenario where two threads attempt to acquire locks in a circular dependency, leading to a deadlock.
+
+#### **Practice 2: Resolving Deadlock**
+**Requirement:**
+- Modify the deadlock example to resolve the deadlock by ensuring locks are acquired in a consistent order.
+
+#### **Practice 3: Livelock Scenario**
+**Requirement:**
+- Simulate a livelock where two threads continuously yield to each other, preventing progress.
+
+#### **Practice 4: Resolving Livelock**
+**Requirement:**
+- Resolve the livelock scenario using a timeout or randomized backoff.
+
+#### **Practice 5: Starvation Scenario**
+**Requirement:**
+- Create a scenario where a high-priority thread prevents lower-priority threads from making progress.
+
+#### **Practice 6: Resolving Starvation**
+**Requirement:**
+- Resolve the starvation scenario by implementing fair scheduling.
+
+#### **Practice 7: Race Condition in Shared Counter**
+**Requirement:**
+- Simulate a race condition where multiple threads increment a shared counter without proper synchronization.
+
+#### **Practice 8: Fixing Race Condition with Synchronization**
+**Requirement:**
+- Resolve the race condition in the shared counter example using synchronized methods or blocks.
+
+#### **Practice 9: Atomic Operations for Race Condition**
+**Requirement:**
+- Use `AtomicInteger` to safely increment a shared counter, avoiding synchronization overhead.
+
+#### **Practice 10: Detecting Thread Interference**
+**Requirement:**
+- Create a scenario where thread interference results in incorrect results and demonstrate how to fix it.
+
