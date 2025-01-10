@@ -1,0 +1,9 @@
+
+•
+java:S2095"MUse try-with-resources or close this "ExecutorService" in a "finally" clause.(àÅ×öûÿÿÿÿ8òö©¢Ã2J$130d25a5-12a5-43ed-9c9c-a17e12e892ae
+r	java:S106"+Replace this use of System.out by a logger.(…ï¼“ÿÿÿÿÿ8â¬©¢Ã2J$9ae2f473-f86e-4bcf-b2bb-7ff162bd8756
+m	java:S106"+Replace this use of System.out by a logger.(Ö¥òê8ã¬©¢Ã2J$09970d95-74a3-4cfc-8a0d-205dfe8681c5
+r	java:S106"+Replace this use of System.out by a logger.(‰Œæ²ýÿÿÿÿ8ã¬©¢Ã2J$2f3f77f1-fce6-4d88-952e-eb239740914f
+m	java:S106"+Replace this use of System.out by a logger.(Ö¥òê8ä¬©¢Ã2J$6564ab24-6baa-43f3-9788-371765ca79af
+r	java:S106"+Replace this use of System.out by a logger.(Æì° úÿÿÿÿ8ä¬©¢Ã2J$7ec8d591-0e00-4e93-ad4b-c954e61b10a4
+X	java:S125"<This block of commented-out lines of code should be removed.(¬ù¡Ã8èˆº¢Ã2

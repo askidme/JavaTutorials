@@ -1,0 +1,12 @@
+
+
+java:S2095)"JUse try-with-resources or close this "ForkJoinPool" in a "finally" clause.(„°›å8ªâßÇÃ2J$8ec57d01-f729-44ef-b958-30fd9e998025
+f
+java:S2119"Save and re-use this "Random".(æææ°ûÿÿÿÿ8±âßÇÃ2J$19f95927-2c60-4743-b13c-f243c43b469a
+m	java:S106"+Replace this use of System.out by a logger.(ÀÒÆ 8²âßÇÃ2J$60b63210-61f9-4009-8910-b77593ce262a
+m	java:S106!"+Replace this use of System.out by a logger.(ÿÒù¬8²âßÇÃ2J$1417b774-b991-493f-ac23-21d3da13f831
+r	java:S106-"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8µâßÇÃ2J$848e2175-8d9e-4f13-9b63-87ef877cf557
+m	java:S106."+Replace this use of System.out by a logger.(·ƒıÊ8µâßÇÃ2J$40b844d7-3dca-4fa8-9f0b-56dd4c31e9a9
+m	java:S106/"+Replace this use of System.out by a logger.(îş”¼8¶âßÇÃ2J$c20ace88-db71-4adf-a6e0-87fd97fa65eb
+}
+java:S1128":Remove this unused import 'java.util.stream.DoubleStream'.(óÖĞ©8·âßÇÃ2J$2e573c4d-3e7a-4551-b845-29b1254195e7

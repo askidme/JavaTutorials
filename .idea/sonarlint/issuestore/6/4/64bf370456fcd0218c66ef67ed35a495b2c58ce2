@@ -1,0 +1,17 @@
+
+…
+java:S2094"BRemove this empty class, write its code or make it an "interface".(ïÕù¨8€®ŸÊÃ2J$541be623-e099-4909-8f8a-cba7ad5f83f6
+Š
+java:S2094	"BRemove this empty class, write its code or make it an "interface".(ÜõŒµüÿÿÿÿ8€®ŸÊÃ2J$c5d5ed97-0d89-4c00-beb2-4cabda4245cf
+‘
+java:S2445"I"food" is a method parameter, and should not be used for synchronization.(—ß¡Èıÿÿÿÿ8€®ŸÊÃ2J$4daa5cbc-7c21-4ef5-9d2a-16d84f8d45c9
+m	java:S106"+Replace this use of System.out by a logger.(Üòöš8€®ŸÊÃ2J$b4a9547c-2b26-4428-82d3-295f528430c0
+
+java:S2445"J"water" is a method parameter, and should not be used for synchronization.(°å8€®ŸÊÃ2J$be4116de-29f9-4e92-b4aa-425e6ba6d7a5
+r	java:S106"+Replace this use of System.out by a logger.(ïîÃµşÿÿÿÿ8€®ŸÊÃ2J$f38d856c-8ee1-4be1-9d57-b096b1346964
+
+java:S2445"J"water" is a method parameter, and should not be used for synchronization.(°å8€®ŸÊÃ2J$dc307794-df38-40e0-b18f-690f287c7e1d
+r	java:S106"+Replace this use of System.out by a logger.(ïîÃµşÿÿÿÿ8€®ŸÊÃ2J$8d3524cf-ca29-42de-abd3-a13d66b75231
+‘
+java:S2445"I"food" is a method parameter, and should not be used for synchronization.(—ß¡Èıÿÿÿÿ8€®ŸÊÃ2J$e4e08bea-3dc1-476b-a7e0-aa2e38ab11b9
+m	java:S106"+Replace this use of System.out by a logger.(Üòöš8€®ŸÊÃ2J$431f4e5e-5812-42e5-a17d-f57b3ec7dfaa

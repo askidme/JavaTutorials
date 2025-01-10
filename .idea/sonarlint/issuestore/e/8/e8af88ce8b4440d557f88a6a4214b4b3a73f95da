@@ -1,0 +1,17 @@
+
+
+java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ιγο•ϊÿÿÿÿ8µΎΓ2J$705ccb98-b598-4703-9065-741d423c62d0
+
+java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ΜΫÿϋÿÿÿÿ8©Β•ΎΓ2J$a95bbcf8-2728-4e5b-9bcb-d852749063e3
+o
+java:S2201"'The return value of "get" must be used.(ΜΫÿϋÿÿÿÿ8®π”ΎΓ2J$726526f1-95df-450f-a482-583801bf1544
+
+java:S1612"@Replace this lambda with method reference 'this::processRecord'.(ΜΫÿϋÿÿÿÿ8»ΞΎΓ2J$208e3535-cb1a-4e6e-bc1c-993df7da7569
+o
+java:S2201"'The return value of "get" must be used.(ιγο•ϊÿÿÿÿ8•ΎΓ2J$99aa2761-2ae5-493d-b508-cd93a322e4b6
+
+java:S1612"@Replace this lambda with method reference 'this::processRecord'.(ιγο•ϊÿÿÿÿ8½ΞΎΓ2J$05264b43-1240-4bbb-bbb6-88255d6e5d37
+y
+java:S1612"6Replace this lambda with method reference 'data::add'.(ϋτΎ8³Β•ΎΓ2J$73d5c34f-0359-44a7-acbc-60c9227d3370
+r	java:S106""+Replace this use of System.out by a logger.(°Ν¬‰ωÿÿÿÿ8™‚ΎΓ2J$8291b275-5d8d-4303-9f65-20f6ba1f30b6
+r	java:S106("+Replace this use of System.out by a logger.(“ωÿÿÿÿ8Ίβ—ΎΓ2J$3f0746a9-3fe6-476b-aa13-57c80961c251
