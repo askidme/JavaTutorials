@@ -1,6 +1,0 @@
-
-r	java:S106"+Replace this use of System.out by a logger.(½ªÛùÿÿÿÿ8ş—©Ã2J$fe5ebf8f-6396-4862-abb1-d5660413322f
-
-java:S1612"MReplace this lambda with method reference 'sheepManager::incrementAndReport'.(‰ÉãØ8ş—©Ã2J$76b7770b-0c2e-480c-83d0-b4377cd456af
-
-java:S1128"FRemove this unused import 'java.util.concurrent.atomic.AtomicInteger'.(¿êäœøÿÿÿÿ8Åö»£Ã2J$5f90674a-b660-4811-9545-b995bcbc32e4

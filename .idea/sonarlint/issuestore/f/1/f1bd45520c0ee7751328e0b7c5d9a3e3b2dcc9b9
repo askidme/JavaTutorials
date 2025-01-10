@@ -1,9 +1,0 @@
-
-m	java:S106"+Replace this use of System.out by a logger.(½µÛˆ8òö·ÅÃ2J$53822594-dc40-4977-b918-8d078b57ef97
-m	java:S106"+Replace this use of System.out by a logger.(êşÙÄ8óö·ÅÃ2J$d446448c-b5bd-4e22-a04f-98952d26f0a1
-r	java:S106"+Replace this use of System.out by a logger.( öıäùÿÿÿÿ8óö·ÅÃ2J$9f8bae0d-709f-4af6-bf35-f346c77f09d8
-¡
-java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾8êĞ¶ÈÄ2J$a9c80731-a220-4e20-b628-89f1e69cf3f2
-m	java:S106'"+Replace this use of System.out by a logger.(­©àğ8ÉöÄÅÃ2J$71222a85-c3b7-4fd5-8482-4028b8189066
-‹
-java:S1128"HRemove this unused import 'java.util.concurrent.BrokenBarrierException'.(§ø€ÿ8ƒµÈÄ2J$0b9b70fa-e90f-4663-8d45-f9f251e9b439

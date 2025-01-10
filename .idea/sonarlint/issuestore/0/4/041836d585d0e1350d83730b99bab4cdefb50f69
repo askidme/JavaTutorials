@@ -1,8 +1,0 @@
-
-r	java:S106"+Replace this use of System.out by a logger.(Ñ¬ÜÃÿÿÿÿÿ8í¬ÓğÂ2J$1d13c2f7-7bd1-404d-8b0b-42dfee1d5382
-¦
-java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‚¦¡ûûÿÿÿÿ8÷èÑğÂ2J$b4ed12fe-431f-4eae-9bb5-0147bab5c5ff
-p	java:S108")Either remove or fill this block of code.(‚¦¡ûûÿÿÿÿ8÷èÑğÂ2J$07fdcd28-712b-42be-be56-cfc7b39f940e
-¦
-java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‚¦¡ûûÿÿÿÿ8Ç¿ÔğÂ2J$1f3480ec-1565-4710-94b0-2892f84fb1fe
-p	java:S108")Either remove or fill this block of code.(‚¦¡ûûÿÿÿÿ8È¿ÔğÂ2J$9773dfdd-53ad-4c47-8c0c-eecdb137f6a0

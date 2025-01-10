@@ -1,9 +1,0 @@
-
-ƒ
-java:S1854";Remove this useless assignment to local variable "vThread".(†Êÿ«ûÿÿÿÿ8ø–¸ñÂ2J$adaf42a6-9821-4583-9f17-104f5e6c7552
-m	java:S106"+Replace this use of System.out by a logger.(ã…†8ú–¸ñÂ2J$556edb3e-897a-45b2-84ab-6d2c2bdac51f
-t
-java:S1481",Remove this unused "vThread" local variable.(†Êÿ«ûÿÿÿÿ8ü–¸ñÂ2J$3fcd39c6-fc21-4ef7-a231-5640ef6324a0
-¦
-java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‚¦¡ûûÿÿÿÿ8¤ÔÇñÂ2J$96b43aec-6382-4d82-af9f-438dc27a48f5
-p	java:S108")Either remove or fill this block of code.(‚¦¡ûûÿÿÿÿ8¤ÔÇñÂ2J$935bbfdf-b755-437b-b5f5-1d6448239751

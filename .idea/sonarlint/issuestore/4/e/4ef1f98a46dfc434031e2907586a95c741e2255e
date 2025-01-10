@@ -1,9 +1,0 @@
-
-›
-java:S1104"SMake counter a static final constant or non-public and provide accessors if needed.(£èÆıÿÿÿÿ8Ê­·“Ã2J$7c4123b8-f3d2-4258-a7cd-2980aae9e9cc
-u
-java:S1444"-Make this "public static counter" field final(£èÆıÿÿÿÿ8Ê­·“Ã2J$467a9f6f-f9fe-40bb-b0f3-3ebd1199adf5
-~
-java:S2696"6Make the enclosing method "static" or remove this set.(§ãì”ıÿÿÿÿ8åü·“Ã2J$720c5a4a-4d71-4c85-b003-96ffe7c77637
-r	java:S106"+Replace this use of System.out by a logger.(ğ‚ı«ûÿÿÿÿ8ô¸¸“Ã2J$7dc11984-51ea-4227-9c50-1e931c4de280
-r	java:S106"+Replace this use of System.out by a logger.(ğ‚ı«ûÿÿÿÿ8ßÿ¹“Ã2J$4e19963a-4604-4b22-86fe-89327e46b1e1

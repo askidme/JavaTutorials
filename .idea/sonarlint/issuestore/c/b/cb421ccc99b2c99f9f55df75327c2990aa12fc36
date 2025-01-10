@@ -1,18 +1,0 @@
-
-
-java:S2095-"JUse try-with-resources or close this "ForkJoinPool" in a "finally" clause.(„°›å8‘ŠÊÉÃ2J$95377325-6625-43b4-9cec-ccf6e320eea2
-“
-java:S3655 "PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ˆ°íò8’ŠÊÉÃ2J$a9240060-c010-4dbc-b2f3-3e7a6be917bc
-m	java:S106"+Replace this use of System.out by a logger.(»ß‰Ì8™ŠÊÉÃ2J$a03acb9c-3bc8-45a4-83ae-ecf9b0b3f289
-•
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’8–ŠÊÉÃ2J$9ea38ccc-ff1c-4479-9906-5f91785a11e3
-d
-java:S3864"!Remove this use of "Stream.peek".(©ï€À8—ŠÊÉÃ2J$690a5e27-04bd-45eb-b28c-6bcf73b0350d
-m	java:S106"+Replace this use of System.out by a logger.(©ï€À8›ŠÊÉÃ2J$9eb0266f-b50a-4a31-ba2e-a5dd5991af6b
-a
-java:S2119"Save and re-use this "Random".(ŠÇü8šŠÊÉÃ2J$2dba8f26-91bc-4af1-9f13-0b566397d169
-r	java:S106#"+Replace this use of System.out by a logger.(ÊÉËÓüÿÿÿÿ8Ô†ËÉÃ2J$ce7f274c-e36b-4755-a1ec-1b556abda578
-L	java:S106/"+Replace this use of System.out by a logger.(…»Ã‹üÿÿÿÿ8ŞÛƒÈÄ2
-}
-java:S1128
-":Remove this unused import 'java.util.stream.DoubleStream'.(óÖĞ©8¡ŠÊÉÃ2J$b2858d82-422b-48f4-a04d-0d96c00a1df8
