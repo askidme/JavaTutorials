@@ -1,0 +1,166 @@
+Topic 1: Introducing Threads:
+
+Question 1: What are the two main ways to create a thread in Java?
+
+Question 2: How does extending the Thread class differ from implementing the Runnable interface when creating threads?
+
+Question 3: What is the purpose of the start() method in the Thread class?
+
+Question 4: Explain the difference between run() and start() methods in a thread.
+
+Question 5: How can you ensure a thread sleeps for a specified amount of time in Java?
+
+Question 6: What is the main thread in Java, and how is it created?
+
+Question 7: What is thread concurrency, and why is it important?
+
+Question 8: Can multiple threads call the run() method directly? What happens in this case?
+
+Question 9: Explain the significance of thread priority in Java.
+
+Question 10: What are the potential issues of using threads in Java, and how can they be mitigated?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 2: Creating Threads with the ExecutorService
+
+1. **Question 1:** What is an `ExecutorService`, and how does it differ from creating threads manually?
+
+2. **Question 2:** What is the purpose of a single-thread executor, and how is it created?
+
+3. **Question 3:** How can an `ExecutorService` be shut down, and what are the differences between `shutdown()` and `shutdownNow()` methods?
+
+4. **Question 4:** What is a `Future` object in the context of an `ExecutorService`?
+
+5. **Question 5:** How does the `submit()` method differ from the `execute()` method in an `ExecutorService`?
+
+6. **Question 6:** How can you schedule tasks to run periodically using an `ExecutorService`?
+
+7. **Question 7:** What happens if a task submitted to an `ExecutorService` throws an exception?
+
+8. **Question 8:** What are the benefits of using a thread pool provided by the `ExecutorService` over manually managing threads?
+
+9. **Question 9:** How does a `FixedThreadPool` differ from a `CachedThreadPool`?
+
+10. **Question 10:** What are the default thread management characteristics of the `ForkJoinPool` used by parallel streams?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 3: Syncronizing Data Access
+
+1. **Question 1:** What is the purpose of using `AtomicInteger` in multithreaded applications?
+
+2. **Question 2:** How does a synchronized block work in Java, and how is it different from a synchronized method?
+
+3. **Question 3:** What is the advantage of using synchronized methods over synchronized blocks?
+
+4. **Question 4:** Can static methods be synchronized in Java? If so, how does it work?
+
+5. **Question 5:** Explain the potential performance costs of synchronization in Java.
+
+6. **Question 6:** What happens if two threads attempt to access a synchronized block on the same object?
+
+7. **Question 7:** How do `Atomic` classes ensure thread safety without using explicit synchronization?
+
+8. **Question 8:** Is it possible to synchronize a part of a method in Java? If yes, how?
+
+9. **Question 9:** What is the difference between intrinsic locks and explicit locks in Java?
+
+10. **Question 10:** Why might you choose to use an `AtomicInteger` instead of a `synchronized` block?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 4: Using concurrent collections
+
+1. **Question 1:** What are concurrent collections in Java, and why are they used?
+
+2. **Question 2:** How does a `ConcurrentHashMap` differ from a `HashMap` in terms of thread safety?
+
+3. **Question 3:** What is the purpose of the `CopyOnWriteArrayList` class, and how does it achieve thread safety?
+
+4. **Question 4:** Explain the concept of memory consistency errors in the context of concurrent collections.
+
+5. **Question 5:** How can you obtain a synchronized version of a collection, and what are its limitations?
+
+6. **Question 6:** What are the differences between `ConcurrentLinkedQueue` and `BlockingQueue`?
+
+7. **Question 7:** How does the `java.util.concurrent` package help mitigate issues with thread safety and performance?
+
+8. **Question 8:** What are the advantages of using `ConcurrentSkipListSet` over `TreeSet` in a multi-threaded environment?
+
+9. **Question 9:** How does `CopyOnWriteArraySet` ensure thread safety, and when should it be used?
+
+10. **Question 10:** Can `ConcurrentHashMap` handle null keys or null values? Why or why not?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 5: Working with parallel streams
+
+1. **Question 1:** What are parallel streams in Java, and how do they differ from sequential streams?
+
+2. **Question 2:** How can you create a parallel stream from a collection?
+
+3. **Question 3:** What are some use cases where parallel streams can improve performance?
+
+4. **Question 4:** Explain the concept of splitting in the context of parallel streams.
+
+5. **Question 5:** How do parallel streams handle thread safety?
+
+6. **Question 6:** What is the difference between `forEach()` and `forEachOrdered()` in parallel streams?
+
+7. **Question 7:** What is a parallel reduction, and how is it performed using parallel streams?
+
+8. **Question 8:** How do parallel streams utilize the `ForkJoinPool` for task execution?
+
+9. **Question 9:** What are some potential pitfalls of using parallel streams?
+
+10. **Question 10:** How can you control the size of the thread pool used by parallel streams?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 6: Managing Concurrent Processes
+
+1. **Question 1:** What is a `CyclicBarrier`, and how is it used in Java?
+
+2. **Question 2:** How does a `CyclicBarrier` differ from a `CountDownLatch`?
+
+3. **Question 3:** What happens if one thread is interrupted while waiting at a `CyclicBarrier`?
+
+4. **Question 4:** How can you execute a task once all threads have reached a `CyclicBarrier`?
+
+5. **Question 5:** What are the main use cases for the `Fork/Join` framework in Java?
+
+6. **Question 6:** Explain the difference between `fork()` and `join()` methods in the `Fork/Join` framework.
+
+7. **Question 7:** How does the `ForkJoinPool` improve performance in a multi-threaded environment?
+
+8. **Question 8:** What is the significance of the `RecursiveTask` and `RecursiveAction` classes in the `Fork/Join` framework?
+
+9. **Question 9:** Can a `CyclicBarrier` be reused? If so, how?
+
+10. **Question 10:** How does the `Fork/Join` framework handle tasks that are too small to be divided further?
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic 7: Identifying Threading Problems
+
+1. **Question 1:** What is a race condition, and why does it occur in multi-threaded applications?
+
+2. **Question 2:** How can race conditions be avoided in Java?
+
+3. **Question 3:** What is a deadlock, and how can it occur in a Java application?
+
+4. **Question 4:** Explain the concept of livelock in the context of multi-threading.
+
+5. **Question 5:** What is thread starvation, and how can it be prevented?
+
+6. **Question 6:** How does the `volatile` keyword help in addressing threading issues?
+
+7. **Question 7:** What are intrinsic locks in Java, and how are they used?
+
+8. **Question 8:** How can deadlocks be detected and resolved in Java?
+
+9. **Question 9:** What are the key differences between livelock and deadlock?
+
+10. **Question 10:** Explain the importance of thread-safe collections in managing race conditions.
